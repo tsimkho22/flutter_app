@@ -139,12 +139,11 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: RadialGradient(
+          gradient: LinearGradient(
             colors: [
               Colors.white,
-              Colors.green.shade700,
+              Colors.blue.shade100,
             ],
-            radius: 1,
           ),
         ),
         child: Center(
