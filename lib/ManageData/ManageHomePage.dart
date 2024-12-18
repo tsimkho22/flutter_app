@@ -1,3 +1,4 @@
+import 'package:firstapp/ManageData/ManageMenuPage.dart';
 import 'package:firstapp/ManageData/drawerMenu.dart';
 import 'package:firstapp/home/homePage.dart';
 import 'package:firstapp/home/messagePage.dart';
@@ -249,9 +250,7 @@ class _ManageHomePageState extends State<ManageHomePage> {
             ? CircularProgressIndicator()
             : TabBarView(children: [
                 Center(
-                  child: Text(
-                    'Test',
-                  ),
+                  child: ManageMenuPage(),
                 ),
                 Center(
                   child: Text(

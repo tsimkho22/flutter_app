@@ -1,3 +1,5 @@
+import 'package:firstapp/ManageData/ManageHomePage.dart';
+import 'package:firstapp/ManageData/ManageMenuPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -69,6 +71,9 @@ class _drawerMenuState extends State<drawerMenu> {
                     ),
                     onTap: () {
                       Navigator.of(context).pop();
+                      MaterialPageRoute route =
+                          MaterialPageRoute(builder: (_) => ManageHomePage());
+                      Navigator.of(context).push(route);
                     },
                   ),
                 ),
